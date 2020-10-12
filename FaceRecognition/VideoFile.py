@@ -28,7 +28,7 @@ known_face_names = ['Hamed','Khaled','Ali','Rema','Lana','Yanal','Zozo']
 
 cap = cv2.VideoCapture(filename2)
 
-while True:
+while cap.isOpened():
     _, frame  = cap.read()
  
     rgb_frame = frame [:, :, ::-1]  # cv2.cvtColor(imageTestO, cv2.COLOR_BGR2RGB)
